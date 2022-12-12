@@ -43,4 +43,3 @@ export const ItemContainerList = () => {
   
   }
 
-export default ItemContainerList
