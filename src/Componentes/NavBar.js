@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../src/2.png'
 
 export const NavBar = () => {
@@ -7,22 +8,33 @@ export const NavBar = () => {
   <div className="flex-1">
 
 
-  <a href='./app.jsx'>
+ <Link to={'/'}>
             <div className="w-20 rounded">
                  <img src= {logo}/>
             </div>
-        </a>
-  </div>
+            </Link>
+        </div>
   
   <div className="flex-none">
 
 <ul className="menu menu-horizontal p-3">
-     
+
+
+    <Link to={'/'}>
     <li><a>Inicio</a></li>
+    </Link>
+    <Link to={'/category/perros'}>
     <li><a>Perros</a></li>
+    </Link>
+    <Link to={'/category/gatos'}>
     <li><a>Gatos</a></li>      
+    </Link>
+    <Link to={'/category/plantas'}>
     <li><a>Plantas</a></li>
+    </Link>
+    <Link to={'/category/más'}>
     <li><a>Más</a></li>
+    </Link>
   </ul>
 
  
